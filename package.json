@@ -3,6 +3,14 @@
   "private": false,
   "version": "0.0.2",
   "description": "tailwind css collections javascript plugins ( buttons, css grid, spaced-items )",
+  "keywords": [
+    "tailwindcss",
+    "tailwind",
+    "tailwind-plugins",
+    "tailwind-button",
+    "tailwind-form",
+    "tailwind-grid"
+  ],
   "author": {
     "email": "mo@meabed.com",
     "name": "Mohamed Meabed",
