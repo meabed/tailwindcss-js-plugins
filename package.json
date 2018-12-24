@@ -16,19 +16,21 @@
     "lint:fix": "eslint --fix --ext .js,.jsx --ignore-path .gitignore .",
     "test": "jest"
   },
-  "devDependencies": {
-    "color": "^3.1.0",
-    "cross-env": "^5.2",
-    "eslint": "5.11.0",
-    "jest": "23.6.0",
+  "dependencies": {
     "lodash.defaults": "^4.2.0",
     "lodash.get": "^4.4.2",
     "lodash.isfunction": "^3.0.9",
     "lodash.isplainobject": "^4.0.6",
     "lodash.map": "^4.6.0",
     "lodash.omit": "^4.5.0",
-    "tailwindcss": "^0.7.3",
     "lodash.max": "4.0.1",
     "lodash.range": "3.2.0"
+  },
+  "devDependencies": {
+    "color": "^3.1.0",
+    "cross-env": "^5.2",
+    "eslint": "5.11.0",
+    "jest": "23.6.0",
+    "tailwindcss": "^0.7.3"
   }
 }
