@@ -1,5 +1,5 @@
 {
-  "name": "@meabed/tailwindcss-js-plugins",
+  "name": "tailwindcss-js-plugins",
   "version": "0.0.1",
   "description": "tailwind css collections javascript plugins ( buttons, css grid, spaced-items )",
   "author": {
