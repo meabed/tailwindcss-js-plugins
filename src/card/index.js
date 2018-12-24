@@ -14,7 +14,7 @@ module.exports = function (options) {
     ? options(defaultOptions())
     : defaults(options, defaultOptions());
 
-  return function ({ addComponents, addUtilities, addUtilitiesaddComponents, e, prefix, config }) {
+  return function ({ addComponents, config }) {
     addComponents([
       {
         '.card': {

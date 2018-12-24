@@ -1,16 +1,22 @@
 ## Tailwind css javascript plugins
 <div align="center">
+  <!-- Build Status -->
+  <a href="https://travis-ci.org/meabed/tailwindcss-js-plugins">
+    <img src="https://travis-ci.org/meabed/tailwindcss-js-plugins.svg?branch=master" alt="Build Status" />
+  </a>
   <!-- Dependency Status -->
   <a href="https://david-dm.org/meabed/tailwindcss-js-plugins">
     <img src="https://david-dm.org/meabed/tailwindcss-js-plugins.svg" alt="Dependency Status" />
   </a>
   <!-- devDependency Status -->
-  <a href="https://david-dm.org/meabed/tailwindcss-js-plugins#info=devDependencies"> 
+  <a href="https://david-dm.org/meabed/tailwindcss-js-plugins?type=dev"> 
     <img src="https://david-dm.org/meabed/tailwindcss-js-plugins/dev-status.svg" alt="devDependency Status" />
   </a>
-  <!-- Build Status -->
-  <a href="https://travis-ci.org/meabed/tailwindcss-js-plugins">
-    <img src="https://travis-ci.org/meabed/tailwindcss-js-plugins.svg?branch=master" alt="Build Status" />
+  <a href="LICENSE.md">
+    <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License">
+  </a>
+  <a href="https://meabed.com">
+    <img src="https://img.shields.io/badge/Author-blog-green.svg?style=flat-square" alt="Authoer Blog">
   </a>
 </div>
 

@@ -1,5 +1,5 @@
 module.exports = function spacedItems({ values, children = ['*'] } = {}) {
-  return function tailwindSpacedItems({ addComponents, addUtilities, addUtilitiesaddComponents, e, prefix, config }) {
+  return function tailwindSpacedItems({ addComponents, config }) {
     let css = {};
     if (!values) {
       values = config('margin');
