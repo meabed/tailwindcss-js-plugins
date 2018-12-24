@@ -95,6 +95,14 @@ module.exports = tailwindConfig;
 ```
 
 #### todo 
+- Add example with html
+- Aad vscodeonline online links
+- Demos
+- more forms classes
+- refactoring
+- auto publishing npm
+- add more tests
+- add more components 
 
 ## Contributing
 
