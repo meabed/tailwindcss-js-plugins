@@ -1,0 +1,48 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "commonjs": true,
+    "node": true,
+    "mocha": true,
+    "jest": true
+  },
+  "settings": {
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "rules": {
+    "strict": "off",
+    "padded-blocks": "off",
+    "comma-dangle": "off",
+    "no-param-reassign": "off",
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "no-underscore-dangle": "off",
+    "no-else-return": "off",
+    "no-unused-vars": "error",
+    "dot-notation": "off",
+    "indent": [
+      "error",
+      2,
+      {
+        "ignoredNodes": [
+          "JSXElement"
+        ],
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-console": 0
+  }
+}
