@@ -10,6 +10,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "build": "yarn build:css",
     "build:css": "cross-env NODE_ENV=development tailwind build ./example/styles.src.css -c ./tailwind.config.js -o ./example/styles.dist.css",
     "lint": "eslint --ext .js,.jsx --ignore-path .gitignore .",
     "lint:fix": "eslint --fix --ext .js,.jsx --ignore-path .gitignore .",
