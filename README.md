@@ -25,7 +25,7 @@
 ### Install 
 ``` yarn add --dev tailwindcss-js-plugins ```
 
-``` npm install tailwindcss-js-plugins ```
+``` npm install --save-dev tailwindcss-js-plugins ```
 
 
 ### usage example 
