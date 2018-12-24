@@ -16,6 +16,10 @@
     "name": "Mohamed Meabed",
     "url": "https://twitter.com/meabed"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meabed/tailwindcss-js-plugins"
+  },
   "license": "MIT",
   "main": "index.js",
   "maintainers": [
