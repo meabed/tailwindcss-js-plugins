@@ -10,6 +10,13 @@
   },
   "license": "MIT",
   "main": "index.js",
+  "maintainers": [
+    {
+      "email": "mo@meabed.com",
+      "name": "Mohamed Meabed",
+      "url": "https://twitter.com/meabed"
+    }
+  ],
   "scripts": {
     "build": "yarn build:css",
     "build:css": "cross-env NODE_ENV=development tailwind build ./example/styles.src.css -c ./tailwind.config.js -o ./example/styles.dist.css",

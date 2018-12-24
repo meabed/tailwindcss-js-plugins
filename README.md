@@ -21,6 +21,79 @@
 </div>
 
 #### description
+
+### Install 
+``` yarn add --dev tailwindcss-js-plugins ```
+
+``` npm install tailwindcss-js-plugins ```
+
+
+### usage example 
+```javascript
+const tailwindConfig = {
+  colors: colors,
+  ....
+  screens: {
+    'sm': '576px',
+    'md': '768px',
+    'lg': '992px',
+    'xl': '1200px',
+  },
+  ....
+  
+};
+
+// add this before end of the file and adjust the module exports so you can pass your
+// custom configuration to the plugins 
+const {
+  spacedItems,
+  buttons,
+  card,
+  form,
+  cssGrid
+} = require('tailwindcss-js-plugins');
+
+tailwindConfig.plugins.push(
+  buttons()
+);
+tailwindConfig.plugins.push(
+  form()
+);
+tailwindConfig.plugins.push(
+  card()
+);
+tailwindConfig.plugins.push(
+  cssGrid({
+    grids: [2, 3, 5, 6, 8, 10, 12],
+    gaps: {
+      0: '0',
+      4: '1rem',
+      8: '2rem',
+    },
+    variants: ['responsive'],
+  })
+);
+
+tailwindConfig.plugins.push(
+  spacedItems({
+    values: {
+      '1': '1px',
+      '2': '2px',
+      '5': '5px',
+      '8': '8px',
+      '10': '10px',
+      '12': '12px',
+      '15': '15px',
+      '20': '20px',
+      '30': '30px',
+    },
+  })
+);
+
+module.exports = tailwindConfig;
+
+```
+
 #### todo 
 
 ## Contributing
