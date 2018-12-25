@@ -4,12 +4,16 @@ export const negativePadding = function negativePadding({ values } = {}) {
     let css = {};
     if (!values) {
       values = config('padding');
+      delete values['0'];
       delete values['auto'];
     }
 
     Object.keys(values).forEach(name => {
       let modifier = name;
       let size = values[name];
+      if (size.charAt(0) !== '-') {
+        size = `-${ size }`;
+      }
       css[`.-p-${ modifier }`] = { 'padding': `${ size }` };
       css[`.-py-${ modifier }`] = { 'padding-top': `${ size }`, 'padding-bottom': `${ size }` };
       css[`.-px-${ modifier }`] = { 'padding-left': `${ size }`, 'padding-right': `${ size }` };

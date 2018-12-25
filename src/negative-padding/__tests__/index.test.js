@@ -5,7 +5,7 @@ const cssContent = fs.readFileSync(path.join(__dirname, '/../../../example/style
 it('find card classes in build file', () => {
 
   [
-    /\.-p-0 {/i,
+    /\.-p-20 {/i,
     /\.-p-1 {/i,
     /\.-p-10 {/i,
 
