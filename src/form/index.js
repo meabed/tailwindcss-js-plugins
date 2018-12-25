@@ -9,7 +9,7 @@ function defaultOptions() {
   };
 }
 
-module.exports = function (options) {
+export const form = function (options) {
   options = isFunction(options)
     ? options(defaultOptions())
     : defaults(options, defaultOptions());

@@ -2,7 +2,7 @@ const range = require('lodash.range');
 const map = require('lodash.map');
 const max = require('lodash.max');
 
-module.exports = function ({ grids = range(1, 12), gaps = {}, variants = ['responsive'] }) {
+export const cssGrid = function ({ grids = range(1, 12), gaps = {}, variants = ['responsive'] }) {
   return function ({ e, addUtilities }) {
     addUtilities([
       { '.grid': { display: 'grid' } },

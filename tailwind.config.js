@@ -129,7 +129,7 @@ let colors = {
   'pink-lightest': '#ffebef',
 };
 
-let tailwindConfg = {
+let tailwindConfig = {
 
   /*
   |-----------------------------------------------------------------------------
@@ -984,19 +984,20 @@ const {
   buttons,
   card,
   form,
-  cssGrid
-} = require('./');
+  cssGrid,
+  negativePadding
+} = require('./dist');
 
-tailwindConfg.plugins.push(
+tailwindConfig.plugins.push(
   buttons()
 );
-tailwindConfg.plugins.push(
+tailwindConfig.plugins.push(
   form()
 );
-tailwindConfg.plugins.push(
+tailwindConfig.plugins.push(
   card()
 );
-tailwindConfg.plugins.push(
+tailwindConfig.plugins.push(
   cssGrid({
     grids: [2, 3, 5, 6, 8, 10, 12],
     gaps: {
@@ -1008,15 +1009,11 @@ tailwindConfg.plugins.push(
   })
 );
 
-tailwindConfg.plugins.push(
+tailwindConfig.plugins.push(
   spacedItems({
     values: {
-      '1': '1px',
-      '2': '2px',
       '5': '5px',
-      '8': '8px',
       '10': '10px',
-      '12': '12px',
       '15': '15px',
       '20': '20px',
       '30': '30px',
@@ -1024,4 +1021,8 @@ tailwindConfg.plugins.push(
   })
 );
 
-module.exports = tailwindConfg;
+tailwindConfig.plugins.push(
+  negativePadding()
+);
+
+module.exports = tailwindConfig;

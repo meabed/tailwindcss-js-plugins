@@ -1,7 +1,7 @@
 {
   "name": "tailwindcss-js-plugins",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "tailwind css collections javascript plugins ( buttons, css grid, spaced-items )",
   "keywords": [
     "tailwindcss",
@@ -30,7 +30,8 @@
     }
   ],
   "scripts": {
-    "build": "yarn build:css",
+    "build": "yarn build:component && yarn build:css",
+    "build:component": "babel src --out-dir dist",
     "build:css": "cross-env NODE_ENV=development tailwind build ./example/styles.src.css -c ./tailwind.config.js -o ./example/styles.dist.css",
     "lint": "eslint --ext .js,.jsx --ignore-path .gitignore .",
     "lint:fix": "eslint --fix --ext .js,.jsx --ignore-path .gitignore .",
@@ -42,11 +43,21 @@
     "lodash.isfunction": "^3.0.9",
     "lodash.isplainobject": "^4.0.6",
     "lodash.map": "^4.6.0",
-    "lodash.omit": "^4.5.0",
     "lodash.max": "4.0.1",
+    "lodash.omit": "^4.5.0",
     "lodash.range": "3.2.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-proposal-decorators": "7.2.3",
+    "@babel/plugin-proposal-export-namespace-from": "7.2.0",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.2.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "10.0.1",
+    "babel-jest": "23.6.0",
     "color": "^3.1.0",
     "cross-env": "^5.2",
     "eslint": "5.11.0",

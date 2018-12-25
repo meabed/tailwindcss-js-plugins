@@ -1,5 +1,5 @@
-module.exports = function spacedItems({ values, children = ['*'] } = {}) {
-  return function tailwindSpacedItems({ addComponents, config }) {
+export const spacedItems = function spacedItems({ values, children = ['*'] } = {}) {
+  return function tailwindSpacedItems({ addUtilities, config }) {
     let css = {};
     if (!values) {
       values = config('margin');
@@ -8,7 +8,7 @@ module.exports = function spacedItems({ values, children = ['*'] } = {}) {
 
     const getSelector = (variant, name, last) =>
       children
-        .map(ch => `.spaced-${ variant }-${ name } > ${ ch }${ last ? ':last-child' : '' }`)
+        .map(ch => `.spd-${ variant }-${ name } > ${ ch }${ last ? ':last-child' : '' }`)
         .join(', ');
 
     Object.keys(values).forEach(name => {
@@ -32,6 +32,6 @@ module.exports = function spacedItems({ values, children = ['*'] } = {}) {
 
     });
 
-    addComponents(css);
+    addUtilities(css, ['responsive']);
   };
 };

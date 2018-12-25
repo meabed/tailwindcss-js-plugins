@@ -9,7 +9,7 @@ function defaultOptions() {
   };
 }
 
-module.exports = function (options) {
+export const card = function (options) {
   options = isFunction(options)
     ? options(defaultOptions())
     : defaults(options, defaultOptions());
@@ -34,7 +34,7 @@ module.exports = function (options) {
           borderTopLeftRadius: '.5rem',
         },
         '.card-body': {
-          borderTopWidth:'2px',
+          borderTopWidth: '2px',
           borderColor: config('colors.secondary-lighter'),
           padding: options.padding,
         },

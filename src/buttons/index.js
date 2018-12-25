@@ -76,7 +76,7 @@ function defaultOptions() {
   };
 }
 
-module.exports = function (options) {
+export const buttons = function (options) {
   options = isFunction(options)
     ? options(defaultOptions())
     : defaults(options, defaultOptions());
