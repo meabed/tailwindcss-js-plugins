@@ -12,6 +12,9 @@
   "extends": [
     "eslint:recommended"
   ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
   "rules": {
     "strict": "off",
     "padded-blocks": "off",

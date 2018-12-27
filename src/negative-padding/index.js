@@ -3,27 +3,27 @@ export const negativePadding = function negativePadding({ values } = {}) {
 
     let css = {};
     if (!values) {
-      values = config('padding');
-      delete values['0'];
-      delete values['auto'];
+      values = config("padding");
+      delete values["0"];
+      delete values["auto"];
     }
 
     Object.keys(values).forEach(name => {
       let modifier = name;
       let size = values[name];
-      if (size.charAt(0) !== '-') {
-        size = `-${ size }`;
+      if (size.charAt(0) !== "-") {
+        size = `-${size}`;
       }
-      css[`.-p-${ modifier }`] = { 'padding': `${ size }` };
-      css[`.-py-${ modifier }`] = { 'padding-top': `${ size }`, 'padding-bottom': `${ size }` };
-      css[`.-px-${ modifier }`] = { 'padding-left': `${ size }`, 'padding-right': `${ size }` };
-      css[`.-pt-${ modifier }`] = { 'padding-top': `${ size }` };
-      css[`.-pr-${ modifier }`] = { 'padding-right': `${ size }` };
-      css[`.-pb-${ modifier }`] = { 'padding-bottom': `${ size }` };
-      css[`.-pl-${ modifier }`] = { 'padding-left': `${ size }` };
+      css[`.-p-${modifier}`] = { "padding": `${size}` };
+      css[`.-py-${modifier}`] = { "padding-top": `${size}`, "padding-bottom": `${size}` };
+      css[`.-px-${modifier}`] = { "padding-left": `${size}`, "padding-right": `${size}` };
+      css[`.-pt-${modifier}`] = { "padding-top": `${size}` };
+      css[`.-pr-${modifier}`] = { "padding-right": `${size}` };
+      css[`.-pb-${modifier}`] = { "padding-bottom": `${size}` };
+      css[`.-pl-${modifier}`] = { "padding-left": `${size}` };
 
     });
 
-    addUtilities(css, ['responsive']);
+    addUtilities(css, ["responsive"]);
   };
 };

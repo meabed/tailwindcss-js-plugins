@@ -1,11 +1,11 @@
-const defaults = require('lodash.defaults');
-const isFunction = require('lodash.isfunction');
+const defaults = require("lodash.defaults");
+const isFunction = require("lodash.isfunction");
 
 function defaultOptions() {
   return {
-    outline: '0',
-    borderRadius: '.25rem',
-    padding: '1rem',
+    outline: "0",
+    borderRadius: ".25rem",
+    padding: "1rem"
   };
 }
 
@@ -17,12 +17,12 @@ export const form = function (options) {
   return function ({ addComponents, config }) {
     addComponents([
       {
-        '.form-input': {
+        ".form-input": {
           outline: options.outline,
           borderRadius: options.borderRadius,
           padding: options.padding,
-          backgroundColor: config('colors.secondary-lighter'),
-          color: config('colors.black'),
+          backgroundColor: config("colors.secondary-lighter"),
+          color: config("colors.black")
         }
       }
     ]);
