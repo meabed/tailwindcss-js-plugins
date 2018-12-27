@@ -1,7 +1,7 @@
 {
   "name": "tailwindcss-js-plugins",
   "private": false,
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "tailwind css collections javascript plugins ( buttons, css grid, spaced-items )",
   "keywords": [
     "tailwindcss",
