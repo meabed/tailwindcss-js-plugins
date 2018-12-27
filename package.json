@@ -1,7 +1,7 @@
 {
   "name": "tailwindcss-js-plugins",
   "private": false,
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "tailwind css collections javascript plugins ( buttons, css grid, spaced-items )",
   "keywords": [
     "tailwindcss",
@@ -62,6 +62,7 @@
     "cross-env": "^5.2",
     "eslint": "5.11.0",
     "jest": "23.6.0",
+    "merge-deep": "3.0.2",
     "tailwindcss": "^0.7.3"
   }
 }
