@@ -61,7 +61,7 @@
     "babel-jest": "23.6.0",
     "color": "^3.1.0",
     "cross-env": "^5.2",
-    "eslint": "5.11.0",
+    "eslint": "5.11.1",
     "jest": "23.6.0",
     "tailwindcss": "^0.7.3"
   }
