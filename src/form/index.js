@@ -1,6 +1,4 @@
-const defaults = require("lodash.defaults");
-const isFunction = require("lodash.isfunction");
-import merge from "merge-deep";
+import mergeDeep from "merge-deep";
 
 function defaultOptions(config) {
 
@@ -18,8 +16,8 @@ function defaultOptions(config) {
 export const form = function (params = { form: {}, input: {} }) {
 
   return function ({ addComponents, config }) {
-    const options = merge(defaultOptions(config), params);
-    
+    const options = mergeDeep(defaultOptions(config), params);
+
     addComponents([
       {
         ".form-input": {
