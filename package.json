@@ -63,7 +63,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.1.0",
     "babel-jest": "23.6.0",
-    "color": "3.1.0",
+    "color": "3.2.1",
     "cross-env": "5.2.1",
     "eslint": "5.16.0",
     "jest": "23.6.0",
