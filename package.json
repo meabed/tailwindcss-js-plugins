@@ -53,13 +53,13 @@
     "merge-deep": "3.0.3"
   },
   "devDependencies": {
-    "@babel/cli": "7.17.6",
-    "@babel/core": "7.17.9",
+    "@babel/cli": "7.17.10",
+    "@babel/core": "7.17.10",
     "@babel/plugin-proposal-class-properties": "7.16.7",
     "@babel/plugin-proposal-decorators": "7.17.9",
     "@babel/plugin-proposal-export-namespace-from": "7.16.7",
     "@babel/polyfill": "7.12.1",
-    "@babel/preset-env": "7.16.11",
+    "@babel/preset-env": "7.17.10",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.1.0",
     "babel-jest": "27.5.1",
@@ -67,7 +67,7 @@
     "cross-env": "7.0.3",
     "eslint": "5.16.0",
     "jest": "27.5.1",
-    "microbundle": "0.14.2",
+    "microbundle": "0.15.0",
     "tailwindcss": "3.0.24"
   }
 }
