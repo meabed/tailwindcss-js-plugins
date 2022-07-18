@@ -53,13 +53,13 @@
     "merge-deep": "3.0.3"
   },
   "devDependencies": {
-    "@babel/cli": "7.18.6",
-    "@babel/core": "7.18.6",
+    "@babel/cli": "7.18.9",
+    "@babel/core": "7.18.9",
     "@babel/plugin-proposal-class-properties": "7.18.6",
-    "@babel/plugin-proposal-decorators": "7.18.6",
-    "@babel/plugin-proposal-export-namespace-from": "7.18.6",
+    "@babel/plugin-proposal-decorators": "7.18.9",
+    "@babel/plugin-proposal-export-namespace-from": "7.18.9",
     "@babel/polyfill": "7.12.1",
-    "@babel/preset-env": "7.18.6",
+    "@babel/preset-env": "7.18.9",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.1.0",
     "babel-jest": "28.1.3",
